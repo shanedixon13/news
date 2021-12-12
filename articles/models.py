@@ -2,13 +2,6 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 
-class Category(models.Model):
-    name=models.CharField(max_length=255)
-    description = models.TextField()
-
-    def __str__(self):
-        return self.title
-
 
 class Article(models.Model):
     title=models.CharField(max_length=200)
@@ -18,12 +11,9 @@ class Article(models.Model):
         on_delete=models.CASCADE
     )
     created_on=models.DateTimeField(auto_now_add=True)
-    category = models.ForeignKey(
-        Category,
-        on_delete=models.CASCADE,
-        null=True,
-        default=None
-    )
+    category = models.CharField(max_length=200, default="None")
+
+
     def __str__(self):
         return self.title
 

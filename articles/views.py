@@ -21,14 +21,16 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
     fields=['title', 'body',]
 
     def form_valid(self, form):
-        form.instance.author = self.request.user
+        user=self.request.user
+        form.instance.author = user
+        form.instance.category = user.department
         return super().form_valid(form)
 
 
 class ArticleEditView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Article
     template_name="article_edit.html"
-    fields=['title', 'body']
+    fields=['title', 'body', 'image',]
 
     def test_func(self):
         obj=self.get_object()
