@@ -1,6 +1,7 @@
 body{
     font-family: 'EB Garamond', serif;
-    background-color: lightgrey;
+    background-color: grey;
+    width: 100%;
 }
 
 
@@ -18,60 +19,465 @@ body{
     margin-top: 1rem;
 }
 
-.article-list-section{
+.article-list h1 a{
+    color: black;
+}
+
+.article-list .article-list-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
+.article-list .card{
+    display: flex;
+    width: 50%;
+    height: 33vh;
+    background-color: lightgrey;
+    border: .5px solid black;
+}
+
+.article-list .card-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+.article-list .top-of-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-list .title-author{
+    width: 100%;
+    height: 25%;
+    margin-left: 6%;
+}
+
 .article-list .article-list-buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-right: 0;
     text-align: right;
 }
 
 .article-list .article-info{
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
 }
 
-.article-list-buttons .card-link {
+.article-list .card-text{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.article-list .article-list-buttons .card-link {
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
 
-.article-list .card{
+/*Front Page*/
+
+.front-page{
     display: flex;
-    width: 50%;
-    height: 25vh;
-    border: .5px solid gray;
+    flex-direction: column;
+    text-align: center;
 }
 
-.article-list .card-body{
+.front-page .page-photo{
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    background-image: url('/static/images/frontpage.jpg');
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.front-page h1{
+    font-size: 5rem;
+    margin: auto;
+    color: white;
+}
+
+.front-page .article-list-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.front-page .card{
+    display: flex;
+    width: 50%;
+    height: 33vh;
+    background-color: lightgrey;
+    border: .5px solid black;
+}
+
+.front-page .card-body{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 25vh;
     justify-content: space-between;
 }
+
+.front-page .top-of-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.front-page .title-author{
+    width: 100%;
+    height: 25%;
+    margin-left: 6%;
+}
+
+.front-page .article-list-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.front-page .article-info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.front-page .card-text{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.front-page .article-list-buttons .card-link {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+/*Local*/
+
+.local{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.local .page-photo{
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    background-image: url('/static/images/local.jpg');
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.local h1{
+    font-size: 5rem;
+    margin: auto;
+    color: white;
+}
+
+.local .article-list-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.local .card{
+    display: flex;
+    width: 50%;
+    height: 33vh;
+    background-color: lightgrey;
+    border: .5px solid black;
+}
+
+.local .card-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+.local .top-of-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.local .title-author{
+    width: 100%;
+    height: 25%;
+    margin-left: 6%;
+}
+
+.local .article-list-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.local .article-info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.local .card-text{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.local .article-list-buttons .card-link {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+/*Sports*/
+
+.sports{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sports .page-photo{
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    background-image: url('/static/images/sports.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    margin-bottom: 0;
+}
+
+.sports h1{
+    font-size: 5rem;
+    margin: auto;
+    color: white;
+}
+
+.sports .article-list-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.sports .card{
+    display: flex;
+    width: 50%;
+    height: 33vh;
+    background-color: lightgrey;
+    border: .5px solid black;
+}
+
+.sports .card-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+.sports .top-of-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.sports .title-author{
+    width: 100%;
+    height: 25%;
+    margin-left: 6%;
+}
+
+.sports .article-list-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.sports .article-info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.sports .card-text{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.sports .article-list-buttons .card-link {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+/*Travel*/
+
+.travel{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.travel .page-photo{
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    background-image: url('/static/images/travel.jpg');
+    background-size: cover;
+    background-position-y: center;
+    margin-bottom: 0;
+}
+
+.travel h1{
+    font-size: 5rem;
+    margin: auto;
+    color: white;
+}
+
+.travel .article-list-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.travel .card{
+    display: flex;
+    width: 50%;
+    height: 33vh;
+    background-color: lightgrey;
+    border: .5px solid black;
+}
+
+.travel .card-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+.travel .top-of-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.travel .title-author{
+    width: 100%;
+    height: 25%;
+    margin-left: 6%;
+}
+
+.travel .article-list-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.travel .article-info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.travel .card-text{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.travel .article-list-buttons .card-link {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+
 
 
 
 /*******************************************************MEDIA QUERIES****************************************************************/
 
 
-/*Article List*/
+
 @media (max-width: 480px) {
+    /*Article List*/
     .article-list .card{
-        width: 100vw;
+        width: 100%;
     }
 
     .article-list .card-body{
-        width: 100vw;
+        width: 100%;
+    }
+
+    /*Front Page*/
+    .front-page .card{
+        width: 100%;
+    }
+
+    .front-page .card-body{
+        width: 100%;
+    }
+
+    /*Local*/
+    .local .card{
+        width: 100%;
+    }
+
+    .local .card-body{
+        width: 100%;
+    }
+
+    /*Sports*/
+    .sports .card{
+        width: 100%;
+    }
+
+    .sports .card-body{
+        width: 100%;
+    }
+
+    /*Travel*/
+    .travel .card{
+        width: 100%;
+    }
+
+    .travel .card-body{
+        width: 100%;
     }
 }

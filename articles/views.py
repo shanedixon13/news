@@ -9,6 +9,22 @@ class ArticleListView(LoginRequiredMixin, ListView):
     model=Article
     template_name="article_list.html"
 
+class FrontPageListView(LoginRequiredMixin, ListView):
+    model=Article
+    template_name="front_page.html"
+
+class LocalListView(LoginRequiredMixin, ListView):
+    model=Article
+    template_name="local.html"
+
+class SportsListView(LoginRequiredMixin, ListView):
+    model=Article
+    template_name="sports.html"
+
+class TravelListView(LoginRequiredMixin, ListView):
+    model=Article
+    template_name="travel.html"
+
 
 class ArticleDetailView(LoginRequiredMixin, DetailView):
     model = Article

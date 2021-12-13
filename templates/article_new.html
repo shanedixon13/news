@@ -3,6 +3,7 @@
 {% block title %}Create Article{% endblock title %} 
 
 {% block content %} 
+{% if not user.department == "None" %}
     <div class="article-new">
         <h1>Create Article</h1>
         <form method="POST">
@@ -13,4 +14,7 @@
             <input type="submit" class="btn btn-success" value="Create">
         </form>
     </div>
+{% else %} 
+<h1>You Do Not Have Permission To Write Articles.</h1>
+{% endif %}
 {% endblock content %}

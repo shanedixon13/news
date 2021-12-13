@@ -3,98 +3,110 @@
 
 {% block content %} 
     <div class="article-list">
-        <h1>Front-Page</h1>
+        <h1><a href="{% url 'front_page' %}">Front Page</a></h1>
         <div class="article-list-section">
             {% for article in article_list %}
                 {% if article.category == 'Front-Page' %}
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title}}</a></h5>
-                            <div class="article-info">
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.category}}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                            <div class="top-of-card">
+                                <div class="title-author">
+                                    <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title|truncatechars:50}}</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                                </div>
+                                <div class="article-list-buttons">
+                                    {% if article.author == user %}
+                                    <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
+                                    <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
+                                    {% endif %}
+                                </div>
                             </div>
-                            <p class="card-text">{{article.body|truncatechars:50}}</p>
-                            <div class="article-list-buttons">
-                                {% if article.author == user %}
-                                <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
-                                <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
-                                {% endif %}
+                            <div class="article-info">
+                                <p class="card-text">{{article.body|truncatechars:100}}</p>
                             </div>
                         </div>
                     </div>
                 {% endif %} 
             {% endfor %}
         </div>
-        <h1>Local</h1>
+        <h1><a href="{% url 'local' %}">Local</a></h1>
         <div class="article-list-section">
             {% for article in article_list %}
                 {% if article.category == 'Local' %}
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title}}</a></h5>
-                            <div class="article-info">
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.category}}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                            <div class="top-of-card">
+                                <div class="title-author">
+                                    <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title|truncatechars:50}}</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                                </div>
+                                <div class="article-list-buttons">
+                                    {% if article.author == user %}
+                                    <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
+                                    <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
+                                    {% endif %}
+                                </div>
                             </div>
-                            <p class="card-text">{{article.body|truncatechars:50}}</p>
-                            <div class="article-list-buttons">
-                                {% if article.author == user %}
-                                <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
-                                <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
-                                {% endif %}
+                            <div class="article-info">
+                                <p class="card-text">{{article.body|truncatechars:100}}</p>
                             </div>
                         </div>
                     </div>
                 {% endif %} 
             {% endfor %}
         </div>
-        <h1>Sports</h1>
+        <h1><a href="{% url 'sports' %}">Sports</a></h1>
         <div class="article-list-section">
             {% for article in article_list %}
                 {% if article.category == 'Sports' %}
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title}}</a></h5>
-                            <div class="article-info">
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.category}}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                            <div class="top-of-card">
+                                <div class="title-author">
+                                    <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title|truncatechars:50}}</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                                </div>
+                                <div class="article-list-buttons">
+                                    {% if article.author == user %}
+                                    <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
+                                    <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
+                                    {% endif %}
+                                </div>
                             </div>
-                            <p class="card-text">{{article.body|truncatechars:50}}</p>
-                            <div class="article-list-buttons">
-                                {% if article.author == user %}
-                                <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
-                                <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
-                                {% endif %}
+                            <div class="article-info">
+                                <p class="card-text">{{article.body|truncatechars:100}}</p>
                             </div>
                         </div>
                     </div>
                 {% endif %} 
             {% endfor %}
         </div>
-        <h1>Politics</h1>
+        <h1><a href="{% url 'travel' %}">Travel</a></h1>
         <div class="article-list-section">
             {% for article in article_list %}
-                {% if article.category == 'Politics' %}
+                {% if article.category == 'Travel' %}
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title}}</a></h5>
-                            <div class="article-info">
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.category}}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                            <div class="top-of-card">
+                                <div class="title-author">
+                                    <h5 class="card-title"><a href="{% url 'article_detail' article.id %}">{{article.title|truncatechars:50}}</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted author">-{{article.author}}</h6>
+                                </div>
+                                <div class="article-list-buttons">
+                                    {% if article.author == user %}
+                                    <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
+                                    <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
+                                    {% endif %}
+                                </div>
                             </div>
-                            <p class="card-text">{{article.body|truncatechars:50}}</p>
-                            <div class="article-list-buttons">
-                                {% if article.author == user %}
-                                <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
-                                <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
-                                {% endif %}
+                            <div class="article-info">
+                                <p class="card-text">{{article.body|truncatechars:100}}</p>
                             </div>
                         </div>
                     </div>
-                {% endif %}
+                {% endif %} 
             {% endfor %}
-        </div>
+        </div>   
     </div>
 
 
