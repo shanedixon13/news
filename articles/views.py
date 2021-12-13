@@ -46,7 +46,7 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 class ArticleEditView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Article
     template_name="article_edit.html"
-    fields=['title', 'body', 'image',]
+    fields=['title', 'body',]
 
     def test_func(self):
         obj=self.get_object()

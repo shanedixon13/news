@@ -6,6 +6,241 @@ body{
 
 
 
+/*login */
+
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.login h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: fit-content;
+    min-height: fit-content;
+}
+
+.login form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.login form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.login input{
+    max-width: 30rem;
+}
+
+.login .btn{
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.login submit{
+    max-width: 40rem;
+    margin: auto;
+}
+
+
+
+/*logout */
+
+.logout{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.logout h1{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*signup */
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.signup h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.signup form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: fit-content;
+    min-height: fit-content;
+}
+
+.signup form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.signup form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.signup input{
+    max-width: 30rem;
+}
+
+.signup .btn{
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.signup submit{
+    max-width: 40rem;
+    margin: auto;
+}
+
+
+
+/*password_change_form */
+
+.password-change{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.password-change h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.password-change form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: fit-content;
+    min-height: fit-content;
+}
+
+.password-change form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.password-change form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.password-change input{
+    max-width: 30rem;
+}
+
+.password-change .btn{
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.password-change submit{
+    max-width: 40rem;
+    margin: auto;
+}
+
+
 
 /*Article-List*/
 
@@ -85,6 +320,55 @@ body{
 }
 
 
+
+/*Article Detail*/
+
+.article-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.article-detail h1{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-detail .title-author{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.article-detail .title-author p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.article-detail-buttons{
+    display: flex;
+    justify-content: space-between;	
+}
+
+.article-detail .card-link{
+	text-decoration: none;
+    font-size: 1rem;
+    color: white;
+	border: 2px solid grey;
+	border-radius: 10px;
+	padding: .5rem;
+    height: fit-content;
+}
+
+
 /*Front Page*/
 
 .front-page{
@@ -96,7 +380,7 @@ body{
 .front-page .page-photo{
     display: flex;
     width: 100%;
-    height: 33vh;
+    height: 33%;
     background-image: url('/static/images/frontpage.jpg');
     background-size: cover;
     margin-bottom: 0;
@@ -428,6 +712,168 @@ body{
 
 
 
+/*Article New */
+
+.article-new{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-new h1{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.article-new form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.article-new form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.article-new form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    height: 100%;
+}
+
+.article-new input{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.article-new textarea{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-new .btn{
+    margin: auto;
+    width: 60%;
+    
+}
+
+.article-new submit{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/*Article Edit */
+
+.article-edit{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-edit h1{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.article-edit form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.article-edit form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.article-edit form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    height: 100%;
+}
+
+.article-edit input{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.article-edit textarea{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-edit .btn{
+    margin: auto;
+    width: 60%;
+    
+}
+
+.article-edit submit{
+    width: 100%;
+    margin: auto;
+}
+
+
+
 
 
 
@@ -445,6 +891,8 @@ body{
         width: 100%;
     }
 
+
+
     /*Front Page*/
     .front-page .card{
         width: 100%;
@@ -453,6 +901,8 @@ body{
     .front-page .card-body{
         width: 100%;
     }
+
+
 
     /*Local*/
     .local .card{
@@ -463,6 +913,8 @@ body{
         width: 100%;
     }
 
+
+
     /*Sports*/
     .sports .card{
         width: 100%;
@@ -472,6 +924,8 @@ body{
         width: 100%;
     }
 
+
+
     /*Travel*/
     .travel .card{
         width: 100%;
@@ -480,4 +934,171 @@ body{
     .travel .card-body{
         width: 100%;
     }
+    
+    
+    
+    /*Article New*/
+
+.article-new{
+    display: flex;
+    flex-direction: column;
+	background-color: black;
+	color: lightgrey;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-new h1{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.article-new form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.article-new form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.article-new form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.article-new input{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.article-new textarea{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-new .btn{
+    margin: auto;
+    width: 60%;
+    
+}
+
+.article-new submit{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+    /*Article Edit*/
+
+.article-edit{
+    display: flex;
+    flex-direction: column;
+	background-color: black;
+	color: lightgrey;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-edit h1{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.article-edit form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.article-edit form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.article-edit form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.article-edit input{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.article-edit textarea{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article-edit .btn{
+    margin: auto;
+    width: 60%;
+    
+}
+
+.article-edit submit{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/*Article Detail*/
+
+.article-detail{
+    width: 100%;
+}
+
 }

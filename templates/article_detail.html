@@ -7,14 +7,16 @@
         {% if article.author == user %}
             <a href="{% url 'article_edit' article.id %}" class="card-link">Edit</a>
         {% endif %}
-        <h1>{{article.title}}</h1>
+        <div class="title-author">
+            <h1>{{article.title}}</h1>
+            <p>{{article.category}}</p>
+            <p class="date">-{{article.created_on}}</p>
+            <p class="author">-{{article.author}}</p>
+        </div>
         {% if article.author == user %}
             <a href="{% url 'article_delete' article.id %}" class="card-link" style="color: red;">Delete</a>
         {% endif %}
-        <p>{{article.category}}</p>
     </div>
-    <p class="author">-{{article.author}}</p>
-    <p class="date">-{{article.created_on}}</p>
     <p>{{article.body}}</p>
 </div>
 {% endblock content %}
