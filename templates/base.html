@@ -67,6 +67,7 @@
 										<li><a class="dropdown-item" href="{% url 'travel' %}">Travel</a></li>
 									</ul>
 								</li>
+								{% if user.is_authenticated %}
 								{% if not user.department == "None" %}
 								<li class="nav-item">
 									<a class="nav-link" href="{% url 'article_new' %}"
@@ -74,7 +75,6 @@
 										>
 								</li>
 								{% endif %}
-								{% if user.is_authenticated %}
 									<li class="nav-item">
 										<a class="nav-link" href="{% url 'password_change' %}"
 											>Change Password</a
