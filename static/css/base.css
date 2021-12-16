@@ -242,6 +242,193 @@ body{
 
 
 
+/*password_reset_form */
+
+.password-reset{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.password-reset h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.password-reset form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: fit-content;
+    min-height: fit-content;
+}
+
+.password-reset form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.password-reset form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+.password-reset input{
+    max-width: 30rem;
+}
+
+.password-reset .btn{
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.password-reset submit{
+    max-width: 40rem;
+    margin: auto;
+}
+
+
+
+/*password-reset-complete */
+
+.password-reset-done{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.password-reset-done h1{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*password_change_form */
+
+.password-reset-confirm{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.password-reset-confirm h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.password-reset-confirm form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: fit-content;
+    min-height: fit-content;
+}
+
+.password-reset-confirm form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.password-reset-confirm form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.password-reset-confirm input{
+    max-width: 30rem;
+}
+
+.password-reset-confirm .btn{
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.password-reset-confirm submit{
+    max-width: 40rem;
+    margin: auto;
+}
+
+
+
+/*password-reset-complete */
+
+.password-reset-complete{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+	background-color: black;
+	color: lightgrey;
+	border-radius: 10px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.password-reset-complete h1{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /*Article-List*/
 
 .article-list{
